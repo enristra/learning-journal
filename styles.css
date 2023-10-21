@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.date,
+.hero-date {
+    text-transform: uppercase;
+    font-size: 0.875em;
+    margin-top: 0.55rem;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em;
+}
+
+.logo {
+    height: 1.5em;
+    width: 1.5em;
+    display: block;
+
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.275rem;
+}
+
+.logo-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font: 0.9rem;
+}
+
+
+.navigation {
+    display: flex;
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    gap: 2rem;
+}
+
+
+/*-------------HERO----------*/
+.hero {
+    background-image: url("./img/article-image-hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 1.25rem 1.25rem;
+    color: white;
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+/*----------BLOG ITEM----------*/
+.blog-desc {
+    color: #505050;
+    font-size: 1.04rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.blog-item {
+    padding: 1.5rem 1.5rem 0rem;
+    text-align: left;
+}
+
+.blog-img {
+    width: 100%;
+    max-width: 370px;
+    max-height: 200px;
+}
+
+footer {
+    background-color: #202020;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-name {
+    font-weight: bold;
+    color: #ECECEC;
+    font-size: 0.75rem;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: #D7D7D7;
+}
+
+.view-more {
+    margin-bottom: 20px;
+    display: block;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (min-width:680px) {
+    header {
+        padding: 1rem 3rem;
+    }
+
+    hero {
+        background-size: 100%;
+    }
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1280px){
+    main{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
